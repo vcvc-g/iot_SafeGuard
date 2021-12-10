@@ -89,11 +89,11 @@ if __name__ == "__main__":
 
     # init for press sensor
     gp.setmode(gp.BCM)
-    gp.setup(23, gp.IN, pull_up_down = gp.PUD_DOWN)
+    gp.setup(5, gp.IN, pull_up_down = gp.PUD_DOWN)
 
     # init for steer
-    gp.setup(18, gp.OUT)  
-    pwm = gp.PWM(18, 50)  
+    gp.setup(13, gp.OUT)  
+    pwm = gp.PWM(13, 50)  
     pwm.start(0)
     
     cap = cv2.VideoCapture(-1)
@@ -126,7 +126,7 @@ if __name__ == "__main__":
                 cv2.waitKey(1)	
                 
                 all_masked = True if len(result) == result.count(0) else False
-                press_value = gp.input(23)
+                press_value = gp.input(5)
                 
                 if not press_value:
                     print("Please use hand sanitizer")
@@ -134,11 +134,11 @@ if __name__ == "__main__":
                     print("Please mask up")
                 if press_value and all_masked:
                     # fast change angle
-                    pwm.ChangeDutyCycle(7.5) #set to 90, open the door
+                    pwm.ChangeDutyCycle(2.5) #set to 90, open the door
                     sleep(0.1)
                     pwm.ChangeDutyCycle(0)
                     sleep(3) 
-                    pwm.ChangeDutyCycle(2.5) #set to 0, close the door
+                    pwm.ChangeDutyCycle(7.5) #set to 0, close the door
                     sleep(0.1)
                     pwm.ChangeDutyCycle(0)
                     break               
