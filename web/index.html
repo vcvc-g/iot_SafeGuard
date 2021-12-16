@@ -115,13 +115,13 @@
 							</header>
 
 							<p align="left">
-								Given that the more contagious Delta variant is spreading across the United States
+								Given that the more contagious variant is spreading across the United States
 								and there is someone who has a weakened immune system, is not yet vaccinated, or is at increased
 								risk for severe disease, continuing to wear a mask indoors anytime you’re around people is very important.
 								This is regardless of vaccination status or the level of transmission in one area. Besides, health experts
 								are encouraging all people to wear a mask indoors in public if they are in an area of “substantial or high
 								transmission”. Wearing a mask in places with higher potential transmission will protect people against the
-								Delta variant and prevent them from possibly spreading it to others. Thus, our system will enforce indoor
+								variant and prevent them from possibly spreading it to others. Thus, our system will enforce indoor
 								mask-wearing and help to suppress the spread of the COVID-19 virus.
 							</p>
 
@@ -131,29 +131,100 @@
 					</section>
 
 
-					<section id="system" class="three">
+
+					<section id="system" class="four">
 						<div class="container">
 
 							<header>
 								<h2>System</h2>
 							</header>
 
-							<p align="left">Remember to use combination of descriptions, photos, and figures</p>
-
 							<h3 align="left">Architecture</h3>
-
-							<p align="left">Blah blah blah</p>
-
+							<br />
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/architect.png" alt="" /></a>
+								<header>
+									<h3>Flowchart</h3>
+								</header>
+							</article>
 
 							<h3 align="left">Technical Components</h3>
+							<br />
 
-							<p align="left">Blah blah blah</p>
+							<div class="row">
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/camera.jpg" alt="" /></a>
+										<header>
+											<h3>Camera</h3>
+											<p>Raspberry PI Camera (CSI Interface +5 Million Pixels) </p>
+										</header>
+									</article>
+								</div>
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/display.jpg" alt="" /></a>
+										<header>
+											<h3>Display</h3>
+											<p> IPS Touch Screen LCD Display, 800x480 HDMI</p>
+										</header>
+									</article>
+								</div>
+								<div class="4u$ 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/steer.jpg" alt="" /></a>
+										<header>
+											<h3>Steering Engine</h3>
+											<p>
+												Servomotor, steering geer
+												SER0006
+											</p>
 
+										</header>
+									</article>
+								</div>
+							</div>
 
-							<h3 align="left">Prototype</h3>
+							<div class="row">
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/thermometer.jpg" alt="" /></a>
+										<header>
+											<h3>Thermometer</h3>
+											<p>SparkFun IR Thermometer Evaluation Board - MLX90614</p>
+										</header>
+									</article>
+								</div>
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pressure_sensor.jpg" alt="" /></a>
+										<header>
+											<h3>Pressure Sensor</h3>
+											<p>Square Force-Sensitive Resistor (FSR) </p>
+										</header>
+									</article>
+								</div>
+								<div class="4u$ 12u$(mobile)">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/ras.jpeg" alt="" /></a>
+										<header>
+											<h3>Raspberry Pi Model 4b</h3>
+											<p>4GB RAM with 1.5GHz 64-bit quad-core CPU</p>
+										</header>
+									</article>
+								</div>
+							</div>
 
-							<p align="left">Blah blah blah</p>
-
+							<br>
+							<h3 align="left">Flowchart</h3>
+							<br />
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/flowchart.png" alt="" /></a>
+								<header>
+									<h3>Block Diagram</h3>
+								</header>
+							</article>
+							<br />
 
 
 						</div>
@@ -167,29 +238,81 @@
 								<h2>Results</h2>
 							</header>
 
-							<p align="left">Remember to use figures to help illustrate results</p>
+<!--							<p align="left">Remember to use figureTechnical Components
+s to help illustrate results</p>-->
 
+							<h3 align="left">Front View</h3>
+							<br />
+							<div class="row">
+								<article class="item">
+									<a href="#" class="image fit"><img src="images/front.jpg" alt="" /></a>
+									<header>
+										<h3>Front View</h3>
+									</header>
+								</article>
+							</div>
 
-							<article class="item">
-								<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-								<header>
-									<h3>Caption</h3>
-								</header>
-							</article>
-
-
+							<br />
+							<h3 align="left">Internal View</h3>
+							<br />
+							<div class="row">
+								<article class="item">
+									<a href="#" class="image fit"><img src="images/internal.jpg" alt="" /></a>
+									<header>
+										<h3>Internal View</h3>
+									</header>
+								</article>
+							</div>
 						</div>
 					</section>
 
-					<section id="references" class="three">
+
+				<section id="Future work" class="two">
+					<div class="container">
+						<header>
+							<h2>Future work</h2>
+						</header>
+
+						<p align="left">
+							There are several possible improvements to make our current system even better!
+						</p>
+
+						<p align="left">
+							1. Modularized Design. Our system design is highly modularized. Instead of having the whole system integrated in a box like
+							we did in the demo, we can utilize the modularized design feature to distribute each part of the system to different places
+							to make the system smaller and easier for installation.
+						</p>
+
+						<p align="left">
+							2. Better sensors. Replacing the current budget choice MLX90614 sensor with medical level thermometer would decrease the error
+							rate of temperature check and improve the overall system performance.
+							The Raspberry pi camera can be replaced with any sensor with video inputs through any protocols like Webcam or IP camera using HLS video streaming protocol.
+							The current processing unit Raspberry Pi can also be replaced by virtual machine on cluster.
+						</p>
+
+						<p align="left">
+							3. Data extensions. Adding student id card scanner and access to the student database as an extension module to the system would help the administrator has a
+							better knowledge of building accessing pattern or even help locating students who have fever and trying to gain building access.
+						</p>
+
+
+					</div>
+				</section>
+
+
+				<section id="references" class="three">
 						<div class="container">
 
 							<header>
 								<h2>References</h2>
 							</header>
 
-							<p align="left">Blah blah blah</p>
-
+							<p align="left">[1] Ansor, Acep, Ritzkal Ritzkal, and Yuggo Afrianto. "Mask Detection Using Framework Tensorflow and Pre-Trained CNN Model Based on Raspberry Pi." Jurnal Mantik 4.3 (2020): 1539-1545.
+							</p>
+							<p align="left">[2] Prinosil, Jiri, and Ondrej Maly. "Detecting Faces With Face Masks." 2021 44th International Conference on Telecommunications and Signal Processing (TSP). IEEE, 2021.
+							</p>
+							<p align="left">[3] Nowrin, Afsana, et al. "Comprehensive review on facemask detection techniques in the context of covid-19." IEEE access (2021).
+							</p>
 						</div>
 					</section>
 
@@ -208,28 +331,27 @@
 							<div class="row">
 								<div class="4u 12u$(mobile)">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/WechatIMG266.jpeg" alt="" /></a>
 										<header>
 											<h3>Qichao Gao</h3>
-											<p>Description and link</p>
-										</header>
+											<a href="https://github.com/vcvc-g" target="_blank">Github link：github.com/vcvc-g</a>										</header>
 									</article>
 								</div>
 								<div class="4u 12u$(mobile)">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/jiaxiang.jpeg" alt="" /></a>
 										<header>
 											<h3>Jiaxiang Zhang</h3>
-											<p>Description and link</p>
+											<a href="https://github.com/ricardochuang" target="_blank">Github link：github.com/ricardochuang</a>										</header>
 										</header>
 									</article>
 								</div>
 								<div class="4u$ 12u$(mobile)">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/jiajun.jpeg" alt="" /></a>
 										<header>
 											<h3>Jiajun Han</h3>
-											<p>Description and link</p>
+											<a href="https://github.com/hjj1998" target="_blank">Github link：github.com/ricardochuang</a>										</header>
 										</header>
 									</article>
 								</div>
@@ -285,7 +407,7 @@
 					</ul>
 
 			</div>
-
+f
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
